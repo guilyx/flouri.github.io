@@ -1,0 +1,64 @@
+# Jekyll configuration for Flouri.sh documentation
+title: Flouri.sh
+description: AI-powered terminal environment - comprehensive documentation
+url: https://flouri.github.io
+baseurl: ""
+
+# Theme: Just the Docs
+theme: just-the-docs
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings
+search_enabled: true
+heading_anchors: true
+aux_links:
+  "GitHub":
+    - "https://github.com/guilyx/flouri"
+  "PyPI":
+    - "https://pypi.org/project/flouri/"
+
+# Color scheme
+color_scheme: light
+
+# Navigation structure
+nav_order: 1
+
+# Footer content
+footer_content: "Built with <a href=\"https://github.com/just-the-docs/just-the-docs\">Just the Docs</a>"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gem/
+  - vendor/ruby/
+
+# Collections
+collections:
+  api:
+    output: true
+    permalink: /api/:name/
+  guides:
+    output: true
+    permalink: /guides/:name/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# GitHub Pages settings
+github:
+  repository_url: https://github.com/flouri/flouri.github.io
+
+# Custom head includes
+head_includes:
+  - custom-head.html
