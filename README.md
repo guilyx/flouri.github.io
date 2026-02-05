@@ -4,6 +4,32 @@ This is the documentation website for [Flouri.sh](https://github.com/guilyx/flou
 
 ## Development
 
+### Prerequisites
+
+- Ruby 3.0+ (check with `ruby --version`)
+- Bundler (Ruby gem manager)
+
+### Installing Bundler
+
+If you don't have Bundler installed:
+
+```bash
+# Install Bundler (user installation, no sudo required)
+gem install bundler --user-install
+
+# Add to your PATH (add this to your ~/.zshrc or ~/.bashrc to make it permanent)
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+```
+
+To make the PATH change permanent, add this line to your shell configuration file:
+- For zsh: `~/.zshrc`
+- For bash: `~/.bashrc`
+
+```bash
+echo 'export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
 ### Local Setup
 
 1. Install dependencies:

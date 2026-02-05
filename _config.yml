@@ -4,9 +4,11 @@ description: AI-powered terminal environment - comprehensive documentation
 url: https://flouri.github.io
 baseurl: ""
 
-# Theme: Just the Docs
-theme: just-the-docs
+# Theme: Just the Docs (using remote_theme for GitHub Pages)
+remote_theme: just-the-docs/just-the-docs@v0.8.2
+
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -22,9 +24,6 @@ aux_links:
 # Color scheme
 color_scheme: light
 
-# Navigation structure
-nav_order: 1
-
 # Footer content
 footer_content: "Built with <a href=\"https://github.com/just-the-docs/just-the-docs\">Just the Docs</a>"
 
@@ -38,27 +37,14 @@ exclude:
   - vendor/gem/
   - vendor/ruby/
 
-# Collections
-collections:
-  api:
-    output: true
-    permalink: /api/:name/
-  guides:
-    output: true
-    permalink: /guides/:name/
-
 # Markdown settings
 markdown: kramdown
+highlighter: rouge
 kramdown:
-  syntax_highlighter: rouge
+  input: GFM
   syntax_highlighter_opts:
-    block:
-      line_numbers: true
+    default_lang: plaintext
 
 # GitHub Pages settings
 github:
-  repository_url: https://github.com/flouri/flouri.github.io
-
-# Custom head includes
-head_includes:
-  - custom-head.html
+  repository_url: https://github.com/guilyx/flouri.github.io
