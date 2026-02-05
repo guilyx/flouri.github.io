@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "gem install bundler -v 2.4.22 && bundle install",
+  "buildCommand": "bundle exec jekyll build",
+  "outputDirectory": "_site"
+}
